@@ -35,7 +35,7 @@ model.summary()
 model.compile(loss='mean_squared_error',
              optimizer='Adam')
 history = model.fit(X_train, y_train,
-                   batch_size=640, nb_epoch=12,
+                   batch_size=640, nb_epoch=16,
                    verbose=1, validation_data=(X_val, y_val))
 
 model.save_weights('model.h5')
