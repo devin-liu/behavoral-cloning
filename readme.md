@@ -14,6 +14,9 @@ The images I used were from the Udacity dataset, so I will exclude information o
 
 The lambda layer was incredible for normalizing the data, and helping smooth out the steering angle extremeties
 I chose 2x2 convolutions because 3x3 and 5x5 seemed to lose too much data on my image size (16x32)
+The batch size matched the number of neurons in my final dense layer (taken from Comma AI model)
+More epochs created smoother transitions in the steering angle, but too many made the car fall off.
+
 
 I saw the comma AI model went 16,32,64, increasing the number of filters on later layers.
 However, I found better results by starting high and going lower with my filters.
