@@ -10,9 +10,9 @@ def preprocess_image(image_array):
 
 
 def normalize(image_array):
-  # image_array -= np.mean(image_array, axis = 0)
+  # standard = image_array.std()
+  # image_array = np.divide(image_array, standard)
   mean = image_array.mean()
-  # X /= np.std(X, axis = 0)
   image_array = np.subtract(image_array, mean)
   return image_array
 
